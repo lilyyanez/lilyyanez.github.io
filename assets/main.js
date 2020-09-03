@@ -3552,13 +3552,7 @@
 }, function(t, e, n) {
     "use strict";
     e.a = {
-        init: function() {
-            try {
-                window.Typekit.load();
-            } catch (t) {
-                console.warn("Typekit not loaded.");
-            }
-        }
+        init: function() {}
     };
 }, function(t, e, n) {
     var r, i;
