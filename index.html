@@ -1,1 +1,313 @@
-Hello World
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://lilyyanez.myportfolio.com/ -->
+<html lang="en-US" class="wf-ftnk-n4-active wf-ftnk-i4-active wf-ftnk-n3-active wf-ftnk-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="./assets/e7fb1b89a0"></script><script src="./assets/nr-1177.min.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e7fb1b89a0",applicationID:"750147145"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(c(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(5),c=e(6),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,n){s[n]=i(p+n,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(l+"tracer",[u.now(),e,t],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&d("lcp",[t[t.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var n=Math.round(e.timeStamp),t={type:e.type};n<=p.now()?t.fid=p.now()-n:n>p.offset&&n<=Date.now()?(n-=p.offset,t.fid=p.now()-n):n=p.now(),g=!0,d("timing",["fi",n,t])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(4),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e){function n(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,n,!1)}n.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],5:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],6:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],7:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function t(t,r,i,o){if(!p.aborted||o){e&&e(t,r,i);for(var a=n(i),c=v(t),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[t]];return d&&d.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(t)}function y(e,n){u(e,function(e,t){n=n||"feature",w[t]=n,n in s||(s[n]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(5),s={},d={},p=n.exports=i();p.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(w,function(n,t){e[n]||(e[n]=t)});var t=a();f("mark",["onload",t+E.offset],null,"api"),f("timing",["load",t]);var r=l.createElement("script");r.src="https://"+e.agent,n.parentNode.insertBefore(r,n)}}function i(){"complete"===l.readyState&&o()}function o(){f("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-E.offset}var c=(new Date).getTime(),f=e("handle"),u=e(5),s=e("ee"),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,y=g&&g.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var h=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1177.min.js"},b=g&&y&&y[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:c,now:a,origin:h,features:{},xhrWrappable:b,userAgent:d};e(1),e(2),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),f("mark",["firstbyte",c],null,"api");var x=0,O=e(7)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(6),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof t?t(r,a):t||{}}catch(u){p([u,"",[r,a,i],c])}s(n+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(n+"err",[r,a,d],c),d}finally{s(n+"end",[r,a,f],c)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<n.length;f++)c=n[f],a=e[c],r(a)||(e[c]=t(a,u?c+i:i,o,c))}function s(t,r,i){if(!f||n){var o=f;f=!0;try{e.emit(t,r,i,n)}catch(a){p([a,t,r,i])}f=o}}function d(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){p([r])}for(var i in e)c.call(e,i)&&(n[i]=e[i]);return n}function p(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@AdobePortfolio">
+      <meta property="og:title" content="Lily Yañez">
+      <meta property="og:image" content="https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae174ed3-59fe-40c5-9ced-eb906f5b5bec_rwc_11x4x358x201x358.png?h=4fb0994cfb6c71f249c703a0abcf10b9">
+        <link rel="icon" href="https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/739a3ad4-5499-40c3-880e-e1603dc98b85_carw_1x1x32.png?h=04d01593e1d4d100f641f61c46f93199">
+      <link rel="stylesheet" href="./assets/main.css" type="text/css">
+      <link rel="stylesheet" href="./assets/b8a6f9c5add1180950f97626d0e883501598649702.css" type="text/css">
+    <link rel="canonical" href="https://lilyyanez.myportfolio.com/work">
+      <title>Lily Yañez</title>
+    <script type="text/javascript" src="./assets/FZQrsNtQa8shC3ZjJGcdWMM2w1QJg0vy6UyO9xIB8XXfeCSgfHYEBsJzwD9oFDIDWhwXZRqow24cwebUFDJ3ZQmRjcJkFeZcZQI3ZeJtFcbX5QFKwQSt526-mkG0dW83da4XZcNC-Av0jhNlOfG0SY4zwKuh-AmaOcuoSeNkieZzde8zOcFzdPUlpWgzS1scdhUTdkoRdhXCSY4zwKuh-AmaOcuoSeNkieZzde8zOcFzdPJIZ1s0-kG4fJmm.js" async="" onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn(&#39;Typekit not loaded.&#39;);
+    }
+    "></script><style type="text/css">@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:ftnk;src:url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}</style>
+<style type="text/css"></style></head>
+        <body class="link-transition" cz-shortcut-listen="true">  <div class="page-background-video page-background-video-with-panel">
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav">
+      <div class="close-responsive-click-area js-close-responsive-nav">
+        <div class="close-responsive-button"></div>
+      </div>
+          <nav class="nav-container js-editable-target editable" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/productos-madreselva">Madreselva</a>
+      </div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/motivus">Motivus</a>
+      </div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/crisopeya-1">Crisopeya</a>
+      </div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/medicina-mapuche">Medicina Mapuche</a>
+      </div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/app-medicina-mapuche-1">App Medicina Mapuche</a>
+      </div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/super-high-1">Super High</a>
+      </div>
+                <div class="gallery-title"><a href="https://lilyyanez.myportfolio.com/work" class="active">Work</a></div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/contact">Contact</a>
+      </div>
+          </nav>
+    </div>
+  </div>
+    <header class="site-header js-site-header js-editable-target editable  js-fixed-nav js-editable-target editable" data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+        <nav class="nav-container js-editable-target editable" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/productos-madreselva">Madreselva</a>
+      </div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/motivus">Motivus</a>
+      </div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/crisopeya-1">Crisopeya</a>
+      </div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/medicina-mapuche">Medicina Mapuche</a>
+      </div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/app-medicina-mapuche-1">App Medicina Mapuche</a>
+      </div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/super-high-1">Super High</a>
+      </div>
+                <div class="gallery-title"><a href="https://lilyyanez.myportfolio.com/work" class="active">Work</a></div>
+      <div class="page-title">
+        <a href="https://lilyyanez.myportfolio.com/contact">Contact</a>
+      </div>
+        </nav>
+        <div class="logo-wrap js-editable-target editable" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+          <div class="logo e2e-site-logo-text logo-image  ">
+    <a href="https://lilyyanez.myportfolio.com/work" class="image-normal image-link">
+      <img src="./assets/b3d42de0-72c7-44d5-86e0-ef510fadda5e_rwc_0x0x109x109x4096.png" alt="Lily Yañez">
+    </a>
+          </div>
+        </div>
+        <div class="hamburger-click-area js-hamburger">
+          <div class="hamburger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+    </header>
+    <div class="header-placeholder"></div>
+        <div class="masthead js-masthead-fixed js-editable-target editable" data-context="page.masthead" data-hover-hint="mastheadOptions" data-hover-hint-placement="top-start">
+          <div class="masthead-contents">
+            <div class="masthead-text js-masthead-text">
+              <div class="js-editable-target editable" data-context="page.masthead" data-hover-hint="mastheadTitle" data-section="Masthead Title"><h1 decorator="inlineTextEditable" contenteditable="false" class="js-inline-text-editable preserve-whitespace main-text rich-text module-text" data-text-keypath="customizations.masthead.title.text" value="¡Hola, Soy Lily!">¡Hola, Soy Lily!</h1></div>
+              <div class="js-editable-target editable" data-context="page.masthead" data-hover-hint="mastheadText" data-section="Masthead Text"><p decorator="inlineTextEditable" contenteditable="false" class="js-inline-text-editable preserve-whitespace main-text rich-text module-text" data-text-keypath="page.masthead.text.text" value="Desliza para ver más o selecciona alguna de las opciones en el navegador">Desliza para ver más o selecciona alguna de las opciones en el navegador</p></div>
+              <div class="masthead-buttons">
+                
+              </div>
+                <div class="masthead-arrow-container js-masthead-arrow js-editable-target editable" data-context="page.masthead" data-section="Scroll Down Arrow" data-hover-hint="scrollDownArrow">
+                  <div class="masthead-arrow"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="masthead-placeholder"></div>
+  <div class="site-wrap cfix js-site-wrap">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+        <main>
+          <section class="project-covers" data-context="page.gallery.covers">
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://lilyyanez.myportfolio.com/madreselva" data-context="pages" data-identity="id:p5f3f2e273a739f21b0a30bbfbb22b45722a66140fc306f9c54834" data-hover-hint="galleryPageCover" data-hover-hint-id="p5f3f2e273a739f21b0a30bbfbb22b45722a66140fc306f9c54834">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy image-loaded" src="./assets/ae174ed3-59fe-40c5-9ced-eb906f5b5bec_rwc_11x4x358x201x358.png" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae174ed3-59fe-40c5-9ced-eb906f5b5bec_rwc_11x4x358x201x640.png?h=daf67718c6e8f10f370d9789b4440218 640w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae174ed3-59fe-40c5-9ced-eb906f5b5bec_rwc_11x4x358x201x1280.png?h=bfc9fd31c2148beb411298353df8e24b 1280w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae174ed3-59fe-40c5-9ced-eb906f5b5bec_rwc_11x4x358x201x1366.png?h=1be922e4dc9ec94520194abe6eebc170 1366w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae174ed3-59fe-40c5-9ced-eb906f5b5bec_rwc_11x4x358x201x358.png?h=4fb0994cfb6c71f249c703a0abcf10b9 1920w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae174ed3-59fe-40c5-9ced-eb906f5b5bec_rwc_11x4x358x201x358.png?h=4fb0994cfb6c71f249c703a0abcf10b9 2560w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae174ed3-59fe-40c5-9ced-eb906f5b5bec_rwc_11x4x358x201x358.png?h=4fb0994cfb6c71f249c703a0abcf10b9 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Madreselva</div>
+                      <div class="description">Creación de sitio web, fotografías y diseños - En proceso, 2020</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space has-rollover" href="https://lilyyanez.myportfolio.com/marca-motivus" data-context="pages" data-identity="id:p5efbd4c444732169a7744f912482a3b46219b38b2250e4ebffb9f" data-hover-hint="galleryPageCover" data-hover-hint-id="p5efbd4c444732169a7744f912482a3b46219b38b2250e4ebffb9f">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-rollover">
+
+            <img class="cover__img js-lazy image-loaded" src="./assets/96dab9ac-342f-4704-98bf-195625d6b4fd_rwc_89x44x447x252x447.png" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/96dab9ac-342f-4704-98bf-195625d6b4fd_rwc_89x44x447x252x447.png?h=8b84240003c805b1f3363f908683f020 640w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/96dab9ac-342f-4704-98bf-195625d6b4fd_rwc_89x44x447x252x447.png?h=8b84240003c805b1f3363f908683f020 1280w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/96dab9ac-342f-4704-98bf-195625d6b4fd_rwc_89x44x447x252x447.png?h=8b84240003c805b1f3363f908683f020 1366w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/96dab9ac-342f-4704-98bf-195625d6b4fd_rwc_89x44x447x252x447.png?h=8b84240003c805b1f3363f908683f020 1920w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/96dab9ac-342f-4704-98bf-195625d6b4fd_rwc_89x44x447x252x447.png?h=8b84240003c805b1f3363f908683f020 2560w, https://pro2-bar-s3-cdn-cf1.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/96dab9ac-342f-4704-98bf-195625d6b4fd_rwc_89x44x447x252x447.png?h=8b84240003c805b1f3363f908683f020 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)">
+                              </div>
+                    <div class="cover cover-normal has-rollover">
+
+            <img class="cover__img js-lazy image-loaded" src="./assets/1f1da71b-c404-42eb-8692-3c8b1acf53ee_rwc_89x44x447x252x447.png" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/1f1da71b-c404-42eb-8692-3c8b1acf53ee_rwc_89x44x447x252x447.png?h=d8155f04f4b808865284667c069c941d 640w, https://pro2-bar-s3-cdn-cf.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/1f1da71b-c404-42eb-8692-3c8b1acf53ee_rwc_89x44x447x252x447.png?h=d8155f04f4b808865284667c069c941d 1280w, https://pro2-bar-s3-cdn-cf.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/1f1da71b-c404-42eb-8692-3c8b1acf53ee_rwc_89x44x447x252x447.png?h=d8155f04f4b808865284667c069c941d 1366w, https://pro2-bar-s3-cdn-cf.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/1f1da71b-c404-42eb-8692-3c8b1acf53ee_rwc_89x44x447x252x447.png?h=d8155f04f4b808865284667c069c941d 1920w, https://pro2-bar-s3-cdn-cf.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/1f1da71b-c404-42eb-8692-3c8b1acf53ee_rwc_89x44x447x252x447.png?h=d8155f04f4b808865284667c069c941d 2560w, https://pro2-bar-s3-cdn-cf.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/1f1da71b-c404-42eb-8692-3c8b1acf53ee_rwc_89x44x447x252x447.png?h=d8155f04f4b808865284667c069c941d 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Motivus</div>
+                      <div class="description">Trabajo realizado en 2019 para marca "Motivus"</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://lilyyanez.myportfolio.com/super-high" data-context="pages" data-identity="id:p5ef2943ec33df1f2c6b40d9fa590f4c5aba7f051abb1bfb553540" data-hover-hint="galleryPageCover" data-hover-hint-id="p5ef2943ec33df1f2c6b40d9fa590f4c5aba7f051abb1bfb553540">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy image-loaded" src="./assets/e3812b97-0018-46aa-bc1d-a23e810fabc4_rwc_42x5x310x174x310.png" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/e3812b97-0018-46aa-bc1d-a23e810fabc4_rwc_42x5x310x174x640.png?h=dc1d63157ecaec16b408b7c4e0f1fd03 640w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/e3812b97-0018-46aa-bc1d-a23e810fabc4_rwc_42x5x310x174x1280.png?h=ce51ba88b06cfaf8573d2a28db7accd5 1280w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/e3812b97-0018-46aa-bc1d-a23e810fabc4_rwc_42x5x310x174x1366.png?h=947f50cc7c94e775c2166304de1e7961 1366w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/e3812b97-0018-46aa-bc1d-a23e810fabc4_rwc_42x5x310x174x310.png?h=9eeb8d6f5be426e98ff5877a1c5ad0bc 1920w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/e3812b97-0018-46aa-bc1d-a23e810fabc4_rwc_42x5x310x174x310.png?h=9eeb8d6f5be426e98ff5877a1c5ad0bc 2560w, https://pro2-bar-s3-cdn-cf3.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/e3812b97-0018-46aa-bc1d-a23e810fabc4_rwc_42x5x310x174x310.png?h=9eeb8d6f5be426e98ff5877a1c5ad0bc 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Super High</div>
+                      <div class="description">Diseño realizado para trabajo de pregrado, 2018</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://lilyyanez.myportfolio.com/crisopeya" data-context="pages" data-identity="id:p5ef28e63102f62f9f18ebe27aff43113904f2c3d8a1a435f10632" data-hover-hint="galleryPageCover" data-hover-hint-id="p5ef28e63102f62f9f18ebe27aff43113904f2c3d8a1a435f10632">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy image-loaded" src="./assets/d074cdf2-cbda-453f-acc1-b7195a557477_rwc_23x40x521x293x521.png" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/d074cdf2-cbda-453f-acc1-b7195a557477_rwc_23x40x521x293x640.png?h=1a55bf86c1e715ccc9dc75ed1ff5cf72 640w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/d074cdf2-cbda-453f-acc1-b7195a557477_rwc_23x40x521x293x521.png?h=3eb17838b7325b58667d8aba186aed55 1280w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/d074cdf2-cbda-453f-acc1-b7195a557477_rwc_23x40x521x293x521.png?h=3eb17838b7325b58667d8aba186aed55 1366w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/d074cdf2-cbda-453f-acc1-b7195a557477_rwc_23x40x521x293x521.png?h=3eb17838b7325b58667d8aba186aed55 1920w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/d074cdf2-cbda-453f-acc1-b7195a557477_rwc_23x40x521x293x521.png?h=3eb17838b7325b58667d8aba186aed55 2560w, https://pro2-bar-s3-cdn-cf2.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/d074cdf2-cbda-453f-acc1-b7195a557477_rwc_23x40x521x293x521.png?h=3eb17838b7325b58667d8aba186aed55 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Crisopeya</div>
+                      <div class="description">Diseño realizado para curso de pregrado, 2018</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://lilyyanez.myportfolio.com/medicina-mapuche-1" data-context="pages" data-identity="id:p5ef28ede19eb03f37aae3a74d4a68c3d6bab942dbc866a710d9ce" data-hover-hint="galleryPageCover" data-hover-hint-id="p5ef28ede19eb03f37aae3a74d4a68c3d6bab942dbc866a710d9ce">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy image-loaded" src="./assets/af26a1e4-8407-47a8-aa6f-5fc8e8728740_rwc_461x737x589x332x589.png" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/af26a1e4-8407-47a8-aa6f-5fc8e8728740_rwc_461x737x589x332x640.png?h=5d56e0a7bee61392405c0b7be993854c 640w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/af26a1e4-8407-47a8-aa6f-5fc8e8728740_rwc_461x737x589x332x1280.png?h=7399a99f7906f5d0ebb9b731b65962bc 1280w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/af26a1e4-8407-47a8-aa6f-5fc8e8728740_rwc_461x737x589x332x1366.png?h=fa3400240c53677e1abeb4eb0467b284 1366w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/af26a1e4-8407-47a8-aa6f-5fc8e8728740_rwc_461x737x589x332x589.png?h=a14904e105a9e5fa9fa64a417d1719a8 1920w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/af26a1e4-8407-47a8-aa6f-5fc8e8728740_rwc_461x737x589x332x589.png?h=a14904e105a9e5fa9fa64a417d1719a8 2560w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/af26a1e4-8407-47a8-aa6f-5fc8e8728740_rwc_461x737x589x332x589.png?h=a14904e105a9e5fa9fa64a417d1719a8 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Medicina Mapuche</div>
+                      <div class="description">Diseño de web realizado como parte de un trabajo final, 2018</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="js-editable-target editable project-cover js-project-cover-touch hold-space" href="https://lilyyanez.myportfolio.com/app-medicina-mapuche-2" data-context="pages" data-identity="id:p5f4820a97e30565b2e950b6287fb169f822363ed98dabba31fc6a" data-hover-hint="galleryPageCover" data-hover-hint-id="p5f4820a97e30565b2e950b6287fb169f822363ed98dabba31fc6a">
+            <div class="cover-content-container">
+              <div class="cover-image-wrap">
+                <div class="cover-image">
+                    <div class="cover cover-normal">
+
+            <img class="cover__img js-lazy image-loaded" src="./assets/ae2e6f84-2f58-4969-9a7d-de6f90fa8351_rwc_14x87x391x220x391.png" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae2e6f84-2f58-4969-9a7d-de6f90fa8351_rwc_14x87x391x220x391.png?h=5bfb32d2c1d5a777cadf46520fc493b9 640w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae2e6f84-2f58-4969-9a7d-de6f90fa8351_rwc_14x87x391x220x391.png?h=5bfb32d2c1d5a777cadf46520fc493b9 1280w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae2e6f84-2f58-4969-9a7d-de6f90fa8351_rwc_14x87x391x220x391.png?h=5bfb32d2c1d5a777cadf46520fc493b9 1366w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae2e6f84-2f58-4969-9a7d-de6f90fa8351_rwc_14x87x391x220x391.png?h=5bfb32d2c1d5a777cadf46520fc493b9 1920w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae2e6f84-2f58-4969-9a7d-de6f90fa8351_rwc_14x87x391x220x391.png?h=5bfb32d2c1d5a777cadf46520fc493b9 2560w, https://pro2-bar-s3-cdn-cf6.myportfolio.com/d9a38a0e-6865-45b5-8fb4-bc00989434e7/ae2e6f84-2f58-4969-9a7d-de6f90fa8351_rwc_14x87x391x220x391.png?h=5bfb32d2c1d5a777cadf46520fc493b9 5120w" sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, calc(1200px / 3)">
+                              </div>
+                </div>
+              </div>
+              <div class="details-wrap">
+                <div class="details">
+                  <div class="details-inner">
+                      <div class="title preserve-whitespace">Medicina Mapuche</div>
+                      <div class="description">Diseño de app realizada como parte de un trabajo final, 2018</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          </section>
+              <section class="back-to-top js-editable-target editable" data-hover-hint="backToTop">
+                <a href="https://lilyyanez.myportfolio.com/#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
+              </section>
+              <a class="back-to-top-fixed js-editable-target editable js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop" data-hover-hint-placement="top-start" href="https://lilyyanez.myportfolio.com/#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+                <g>
+                  <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+                    c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+                    c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+                    c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+                    c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+                    c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+                    c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"></path>
+                </g>
+                </svg>
+              </a>
+              <footer class="site-footer js-editable-target editable" data-hover-hint="footer">
+                <div class="footer-text">
+                  Powered by <a href="http://portfolio.adobe.com/" target="_blank">Adobe Portfolio</a>
+                </div>
+              </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"750147145","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQxdtS0QDQ14KT0gbbQ==","queueTime":0,"applicationTime":8,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam.nr-data.net","agent":""}</script>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p5ef27873381bed9d825ac1c3822433d8669cab51f6b96140b75a8","theme":{"name":"marta"},"pageTransition":true,"linkTransition":true,"disableDownload":false,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false}};</script>
+  <script type="text/javascript" src="./assets/translations"></script>
+  <script type="text/javascript" src="./assets/main.js"></script><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
+    
+  <div class="js-blocking" id="lightbox-blocking">
+    <span class="lightbox-spinner"></span>
+  </div>
+
+    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
+      <div class="js-img-wrap" id="lightbox-img-wrap">
+        
+  <div class="lightbox-extra control prev js-control js-prev">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control next js-control js-next">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control close js-control js-close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
+      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
+    </svg>
+  </div>
+
+        <div class="lightbox-contents js-contents"></div>
+      </div>
+    </div>
+  </div>
+
+</body></html>
